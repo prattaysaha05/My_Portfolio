@@ -17,6 +17,7 @@
 }
 
 .btn-primary {
+  cursor: pointer;
   background-color: #fd6e0a;
   font-weight: bold;
   font-size: 20px;
@@ -178,4 +179,29 @@ footer textarea {
   padding: 10px 20px;
   margin-bottom: 24px;
   border: none;
+}
+/* Responsive media query */
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .skills-container,
+  resume-container,
+  footer,
+  .about-items {
+    flex-direction: column;
+  }
+  footer,
+  .about {
+    padding: 20px;
+  }
+  .footer-column {
+    width: 100%;
+  }
+  footer input[type="text"],
+  footer input[type="email"],
+  footer textarea {
+    width: calc(100% - 40px);
+  }
 }
